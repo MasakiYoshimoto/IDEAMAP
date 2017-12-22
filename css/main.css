@@ -1,0 +1,82 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  width:100%;
+}
+header {
+  line-height: 57px;
+  left: 0;
+  width: 100%;
+  background-color: #302517;
+  display: flex;
+  color: #ffffff;
+  vertical-align: center;
+}
+footer {
+  line-height: 45px;
+  left: 0;
+  width: 100%;
+  background-color: #302517;
+  text-align: center;
+  vertical-align: center;
+  color: #ffffff;
+}
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.b-red {
+  border: 1px solid #cb0606;
+}
+.b-green {
+  border: 1px solid #269f02;
+}
+.b-blue {
+  border: 1px solid #0608cb;
+}
+.c-white{
+  color: #ffffff;
+}
+
+#contents {
+  height: 900px;
+  width: 100%;
+}
+.logo {
+  margin: auto 20px;
+  width: 180px;
+  border: 0;
+  outline: 0;
+}
+.sign-area {
+  font-weight: bold;
+  width: 260px;
+}
+.sign-middle {
+  font-weight:normal;
+  color: #c7c7c7;
+  margin: auto 5px;
+}
+.draggable {
+  width: 150px;
+  height: 150px;
+  padding: 0.5em;
+}
+.tool-area {
+  margin-right: 20px;
+  width: 100%;
+  text-align: right;
+}
+.tool {
+  display: inline-block;
+  width: 150px;
+}
+.icon {
+  width: 30px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
