@@ -12,7 +12,7 @@ header {
   background-color: #302517;
   display: flex;
   color: #ffffff;
-  vertical-align: center;
+  vertical-align: middle;
 }
 footer {
   line-height: 45px;
@@ -20,7 +20,7 @@ footer {
   width: 100%;
   background-color: #302517;
   text-align: center;
-  vertical-align: center;
+  vertical-align: middle;
   color: #ffffff;
 }
 h1 {
@@ -44,6 +44,9 @@ h1 {
 #contents {
   height: 900px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .logo {
   margin: auto 20px;
@@ -59,11 +62,6 @@ h1 {
   font-weight:normal;
   color: #c7c7c7;
   margin: auto 5px;
-}
-.draggable {
-  width: 150px;
-  height: 150px;
-  padding: 0.5em;
 }
 .tool-area {
   margin-right: 20px;

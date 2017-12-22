@@ -1,0 +1,23 @@
+.draggable {
+  width: 150px;
+  height: 150px;
+  padding: 0.5em;
+}
+.none-asetts {
+  display: none;
+  width: 800px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  background-color: #afaaaa;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+}
+.palet {
+  height: 900px;
+  width: 1300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
