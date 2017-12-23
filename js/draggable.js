@@ -6,10 +6,10 @@ $(function() {
   do_draggable();
 });
 
-function add_assets(){
+function add_assets(input_txt){
   var count = $('#contents').find('.draggable').length;
   $('.none-asset').css('display', 'none');
-  $('.palet').append('<div class="draggable b-red ui-draggable">要素'+(count+=1)+'</div>');
+  $('.palet').append('<div class="draggable b-red ui-draggable asset-'+(count+=1)+'">'+input_txt+'</div>');
   do_draggable();
 }
 
@@ -19,6 +19,16 @@ function do_draggable(){
 
 $(document).ready(function(){
   $('.add-idea').on('click',function(){
-    $(".input-modal").css('display','flex');
+    $(".input-modal").fadeIn(700).css('display','table');
+  });
+
+
+  $(".input-modal").on('click touchend',function(event){
+    if(!$(event.target).closest('.inner-item').length){
+      $(".input-modal").fadeOut(700);
+    } else if($(event.target).closest('.submit-button').length){
+      add_assets($('.modal-item').find('textarea').val());
+      $(".input-modal").fadeOut(700);
+    }
   });
 });
