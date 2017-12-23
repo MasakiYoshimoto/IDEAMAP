@@ -16,3 +16,9 @@ function add_assets(){
 function do_draggable(){
   $(".draggable").draggable({ containment: ".palet" });
 }
+
+$(document).ready(function(){
+  $('.add-idea').on('click',function(){
+    $(".input-modal").css('display','flex');
+  });
+});

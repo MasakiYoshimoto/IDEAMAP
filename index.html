@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>IDEAMAP</title>
+    <link rel="icon" type="image/png" href="/img/deer_icon.png" sizes="32x32">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/draggable.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.0.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
     <script type="text/javascript" src="/js/draggable.js"></script>
+    <script type="text/javascript" src="/js/html2canvas.js"></script>
+    <script type="text/javascript" src="/js/caption.js"></script>
   </head>
   <body>
     <header>
@@ -19,16 +22,23 @@
         <a class="c-white" href="#">Sign up</a>
       </div>
       <div class="tool-area">
-        <p class="tool">
-          <a class="c-white" href="javascript:void(0)" onclick="add_assets()"><img class="icon" src="/img/midget_lamp_icon.svg" alt="">Input IDEA</a></p>
-        <p class="tool">
-          <a class="c-white" href="#"><img class="icon" src="/img/camera_icon.svg" alt="">Take picture</a>
+        <p class="tool add-idea">
+          <a class="c-white" href="javascript:void(0)"><img class="icon" src="/img/midget_lamp_icon.svg" alt="">Input IDEA</a>
+        </p>
+        <p class="tool capture">
+          <a class="c-white" href="javascript:void(0)"><img class="icon" src="/img/camera_icon.svg" alt="">Take picture</a>
         </p>
       </div>
     </header>
     <div id="contents">
       <div class="palet">
         <div class="none-asset">Let’s input your IDEA</div>
+      </div>
+    </div>
+    <div class="input-modal">
+      <div class="modal-item">
+        <div class="inner-item"><textarea name="idea_text" rows="8" cols="80" placeholder="Your IDEA here"></textarea></div>
+        <div class="inner-item submit-button"><input class="idea-submit" type="button" name="idea-submit" value="Submit"></div>
       </div>
     </div>
     <footer>©2018 copyright</footer>
