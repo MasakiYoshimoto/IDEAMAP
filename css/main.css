@@ -9,38 +9,20 @@ header {
   line-height: 57px;
   left: 0;
   width: 100%;
-  background-color: #302517;
   display: flex;
-  color: #ffffff;
   vertical-align: middle;
 }
 footer {
   line-height: 45px;
   left: 0;
   width: 100%;
-  background-color: #302517;
   text-align: center;
   vertical-align: middle;
-  color: #ffffff;
 }
 h1 {
   font-size: 2em;
   font-weight: bold;
 }
-
-.b-red {
-  border: 1px solid #cb0606;
-}
-.b-green {
-  border: 1px solid #269f02;
-}
-.b-blue {
-  border: 1px solid #0608cb;
-}
-.c-white{
-  color: #ffffff;
-}
-
 #contents {
   height: 900px;
   width: 100%;
@@ -60,7 +42,6 @@ h1 {
 }
 .sign-middle {
   font-weight:normal;
-  color: #c7c7c7;
   margin: auto 5px;
 }
 .tool-area {
@@ -79,7 +60,6 @@ h1 {
   vertical-align: middle;
 }
 .input-modal {
-  background-color: rgba(175,169,169,0.5);
   justify-content: center;
   align-items: center;
   display: none;
@@ -102,10 +82,10 @@ h1 {
   display: inline-block;
   font-weight: bold;
   padding: 0.8em 1em;
-  color: #FFF;
-  background: #302517;
   transition: .4s;
 }
-.submit-button:hover {
-  background: #694f30;
+.circle {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
 }

@@ -2,6 +2,13 @@
   width: 150px;
   height: 150px;
   padding: 0.5em;
+  word-wrap:break-all;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 .none-asset {
   display: none;
@@ -9,8 +16,6 @@
   height: 400px;
   justify-content: center;
   align-items: center;
-  background-color: #afaaaa;
-  color: #ffffff;
   font-size: 24px;
   font-weight: bold;
 }
