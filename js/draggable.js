@@ -1,24 +1,18 @@
+/**
+ * Initialize palette
+ */
 $(function() {
-  var count = $('.palet').find('.draggable').length;
+  var count = $('.palette').find('.draggable').length;
   if(count==0){
     $('.none-asset').css('display', 'flex');
   }
   do_draggable();
 });
 
-function add_assets(input_txt){
-  input_txt = input_txt.replace(/\r?\n/g,"<br>");
-  var b_color = get_random_bg_color();
-  var count = $('#contents').find('.draggable').length;
-  $('.none-asset').css('display', 'none');
-  $('.palet').append('<div class="draggable '+b_color+' ui-draggable circle asset-'+(count+=1)+'">'+input_txt+'</div>');
-  do_draggable();
-}
-
-function do_draggable(){
-  $(".draggable").draggable({ containment: ".palet" });
-}
-
+/**
+ * Function of .add-idea on click
+ * @return {[type]} [description]
+ */
 $(document).ready(function(){
   $('.add-idea').on('click',function(){
     $(".input-modal").fadeIn(700).css('display','table');
@@ -34,6 +28,30 @@ $(document).ready(function(){
   });
 });
 
+/**
+ * Add asset to palette
+ * @param String input_txt user input
+ */
+function add_assets(input_txt){
+  input_txt = input_txt.replace(/\r?\n/g,"<br>");
+  var b_color = get_random_bg_color();
+  var count = $('#contents').find('.draggable').length;
+  $('.none-asset').css('display', 'none');
+  $('.palette').append('<div class="draggable '+b_color+' ui-draggable circle asset-'+(count+=1)+'">'+input_txt+'</div>');
+  do_draggable();
+}
+
+/**
+ * Cshange assets status to dragging active
+ */
+function do_draggable(){
+  $(".draggable").draggable({ containment: ".palette" });
+}
+
+/**
+ * Select random border color from arr_bg_color(Array)
+ * @return String b_color selected color
+ */
 function get_random_b_color(){
   var b_color = "";
   var arr_b_color = [
@@ -47,6 +65,10 @@ function get_random_b_color(){
   return b_color;
 }
 
+/**
+ * Select random background color from arr_bg_color(Array)
+ * @return String bg_color selected color
+ */
 function get_random_bg_color(){
   var bg_color = "";
   var arr_bg_color = [
@@ -60,6 +82,11 @@ function get_random_bg_color(){
   return bg_color;
 }
 
+/**
+ * Get random value from param array
+ * @param  Array[string] array value array
+ * @return mixed value random value
+ */
 function get_random_value(array){
   var value = array[Math.floor(Math.random() * array.length)];
   return value;
