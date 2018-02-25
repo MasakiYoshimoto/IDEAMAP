@@ -11,7 +11,6 @@ $(function() {
 
 /**
  * Function of .add-idea on click
- * @return {[type]} [description]
  */
 $(document).ready(function(){
   $('.add-idea').on('click',function(){
